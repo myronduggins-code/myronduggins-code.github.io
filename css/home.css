@@ -138,7 +138,11 @@
 .field textarea { height: 16rem; min-height: 120px; resize: vertical; }
 .field input::placeholder, .field textarea::placeholder { color: var(--text-body); opacity: 0.35; }
 .field input:focus-visible, .field textarea:focus-visible { border-color: var(--accent); }
-.field [aria-invalid="true"] { border-color: #ffb4ab; }
+/* errors: red outline that stays red while the field is selected, plus a message under it */
+.field [aria-invalid="true"],
+.field [aria-invalid="true"]:focus-visible { border-color: #ffb4ab; box-shadow: 0 0 0 1px #ffb4ab; }
+.field__error { color: #ffb4ab; font-size: max(1.4rem, 13px); line-height: 1.4; }
+.field__error:empty { display: none; }
 .form__status { min-height: 1.5em; color: var(--text-body); }
 .form__status[data-tone="ok"] { color: var(--accent); }
 .form__status[data-tone="error"] { color: #ffb4ab; }

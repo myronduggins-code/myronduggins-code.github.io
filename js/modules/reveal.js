@@ -22,6 +22,7 @@ export function initReveal({ gsap, ScrollTrigger }) {
     !el.classList.contains('stop') &&
     !el.closest('.nav') &&
     !el.closest('[data-wrap-reveal]') &&
+    !el.closest('form') &&   // form messages must never be hidden by the reveal
     !el.closest('.visually-hidden') &&
     !el.classList.contains('visually-hidden') &&
     ![...el.querySelectorAll('*')].some((c) => set.has(c)));

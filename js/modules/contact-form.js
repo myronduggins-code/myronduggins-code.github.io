@@ -27,16 +27,18 @@ export function initContactForm(form) {
     e.preventDefault();
     if (sending) return;
 
+    // check every field and show what's wrong under each one
     let firstBad = null;
+    let badCount = 0;
     for (const f of fields) {
-      const bad = !f.checkValidity() || !f.value.trim();
-      f.setAttribute('aria-invalid', bad ? 'true' : 'false');
-      if (bad && !firstBad) firstBad = f;
+      const msg = problemWith(f);
+      showFieldError(f, msg);
+      if (msg) { badCount += 1; if (!firstBad) firstBad = f; }
     }
     if (firstBad) {
-      setStatus(firstBad.type === 'email' && firstBad.value
-        ? 'Enter an email address like name@example.com.'
-        : `Fill in your ${firstBad.name} to send a message.`, 'error');
+      setStatus(badCount > 1
+        ? 'Please fix the highlighted fields to send your message.'
+        : 'Please fix the highlighted field to send your message.', 'error');
       firstBad.focus();
       return;
     }
@@ -73,7 +75,7 @@ export function initContactForm(form) {
       if (!res.ok || json.success === false) throw new Error(json.message || `HTTP ${res.status}`);
 
       form.reset();
-      fields.forEach((f) => f.setAttribute('aria-invalid', 'false'));
+      fields.forEach((f) => showFieldError(f, ''));
       setStatus('Thanks, your message has been sent. I’ll get back to you soon.', 'ok');
     } catch (err) {
       console.warn('[contact] send failed:', err);
@@ -85,9 +87,29 @@ export function initContactForm(form) {
     }
   });
 
+  // clear a field's error as soon as it's fixed
   form.addEventListener('input', (e) => {
-    if (e.target.getAttribute('aria-invalid') === 'true' && e.target.checkValidity() && e.target.value.trim()) {
-      e.target.setAttribute('aria-invalid', 'false');
+    const f = e.target;
+    if (f.getAttribute('aria-invalid') === 'true' && !problemWith(f)) {
+      showFieldError(f, '');
+      if (!fields.some((x) => x.getAttribute('aria-invalid') === 'true')) setStatus('');
     }
   });
+}
+
+function problemWith(field) {
+  const value = field.value.trim();
+  if (field.name === 'name' && !value) return 'Enter your name.';
+  if (field.name === 'email') {
+    if (!value) return 'Enter your email address.';
+    if (!field.checkValidity()) return 'Enter an email address like name@example.com.';
+  }
+  if (field.name === 'message' && !value) return 'Write a message before sending.';
+  return '';
+}
+
+function showFieldError(field, message) {
+  field.setAttribute('aria-invalid', message ? 'true' : 'false');
+  const slot = document.getElementById(`${field.id}-error`);
+  if (slot) slot.textContent = message;
 }

@@ -5,7 +5,10 @@
 /* 1rem = 10 design px at 1440px wide, scaling down with the viewport so the
    Figma proportions hold between 1440px and the 768px mobile breakpoint. */
 html {
-  font-size: min(10px, calc(100vw / 144));
+  /* 1rem = 1 Figma px / 10. The layout scales with the window and keeps
+     growing past the 1440px design (up to 1.2× at 1728px) so large screens
+     aren't left with empty sides; beyond that it stays centred. */
+  font-size: min(12px, calc(100vw / 144));
   -webkit-text-size-adjust: 100%;
   scroll-behavior: auto;
   background: var(--surface-page);
@@ -13,6 +16,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;          /* section backgrounds bleed to the window edges */
   background: var(--surface-page);
   color: var(--text-heading);
   font-family: var(--font-body);
@@ -41,29 +45,44 @@ button, input, textarea { font: inherit; color: inherit; }
 
 .page {
   position: relative;
+  z-index: 0;                /* own layer, so the full-width section backgrounds sit above the body */
   max-width: 144rem;
   margin-inline: auto;
-  overflow-x: clip;
 }
 
 /* ── Sections: graph paper, dark or light ─────────────────────────────── */
 .sec {
   position: relative;
-  background-color: var(--surface-page);
+  --sec-bg: var(--surface-page);
+}
+/* The section's background is drawn on a layer that runs the full width of
+   the window, so it reaches the screen edges on any size of screen while
+   the content stays centred. */
+.sec::after,
+.sec--dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  pointer-events: none;
+}
+.sec::after {
+  z-index: -2;
+  background-color: var(--sec-bg);
   background-image: url("../assets/graph-tile.png");
   background-size: 8rem 16rem;
-  background-position: top left;
+  background-position: top center;
 }
 .sec--dark::before {               /* Figma: rgba(17,20,21,.8) multiply veil */
-  content: "";
-  position: absolute; inset: 0;
+  z-index: -1;
   background: var(--veil);
   mix-blend-mode: multiply;
-  pointer-events: none;
 }
 .sec > * { position: relative; }    /* keep content above the veil */
 .sec--light {
-  background-color: var(--surface-light);
+  --sec-bg: var(--surface-light);
   color: var(--text-ink);
 }
 

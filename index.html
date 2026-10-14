@@ -142,15 +142,18 @@
         <div class="form__fields">
           <div class="field">
             <label class="label" for="f-name">Name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            <input id="f-name" aria-describedby="f-name-error" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            <p class="field__error" id="f-name-error"></p>
           </div>
           <div class="field">
             <label class="label" for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+            <input id="f-email" aria-describedby="f-email-error" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+            <p class="field__error" id="f-email-error"></p>
           </div>
           <div class="field">
             <label class="label" for="f-message">Message</label>
-            <textarea id="f-message" name="message" placeholder="Tell me about your project…" required></textarea>
+            <textarea id="f-message" aria-describedby="f-message-error" name="message" placeholder="Tell me about your project…" required></textarea>
+            <p class="field__error" id="f-message-error"></p>
           </div>
         </div>
         <!-- spam trap: hidden from people, ticked by bots (Web3Forms honeypot) -->
