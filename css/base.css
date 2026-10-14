@@ -1,0 +1,294 @@
+/* Base styles and shared components. All colours come from tokens.css. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 1rem = 10 design px at 1440px wide, scaling down with the viewport so the
+   Figma proportions hold between 1440px and the 768px mobile breakpoint. */
+html {
+  font-size: min(10px, calc(100vw / 144));
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto;
+  background: var(--surface-page);
+}
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-heading);
+  font-family: var(--font-body);
+  font-size: var(--body-md-size);
+  line-height: var(--body-md-lh);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+p, h1, h2, h3, h4, figure, ul, ol, dl, dd, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+button, input, textarea { font: inherit; color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.sec--light :focus-visible { outline-color: var(--stroke-light); }
+
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+.page {
+  position: relative;
+  max-width: 144rem;
+  margin-inline: auto;
+  overflow-x: clip;
+}
+
+/* ── Sections: graph paper, dark or light ─────────────────────────────── */
+.sec {
+  position: relative;
+  background-color: var(--surface-page);
+  background-image: url("../assets/graph-tile.png");
+  background-size: 8rem 16rem;
+  background-position: top left;
+}
+.sec--dark::before {               /* Figma: rgba(17,20,21,.8) multiply veil */
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--veil);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.sec > * { position: relative; }    /* keep content above the veil */
+.sec--light {
+  background-color: var(--surface-light);
+  color: var(--text-ink);
+}
+
+/* ── Nav ─────────────────────────────────────────────────────────────── */
+.nav {
+  position: absolute;
+  z-index: 20;
+  top: 5.4rem;
+  left: 6.2rem;
+  right: 6.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-heading);
+}
+.nav--ink { color: var(--text-ink); }
+.nav__logo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--nav-name-size);
+  line-height: 1.333;
+  text-decoration: none;
+}
+.nav__links { display: flex; gap: 5.4rem; }
+.nav__links a {
+  font-size: var(--body-md-size);
+  line-height: 1.5;
+  text-decoration: none;
+  text-underline-offset: 0.4em;
+}
+/* Links: no underline on hover; they turn the lavender of the × in the headings */
+.nav a { transition: color 0.2s ease; }
+.nav a:hover, .nav a:focus-visible { color: var(--accent); }
+
+/* ── Type ────────────────────────────────────────────────────────────── */
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--headline-display-size);
+  line-height: var(--headline-display-lh);
+  letter-spacing: var(--headline-display-ls);
+}
+.h-lg {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--headline-lg-size);
+  line-height: var(--headline-lg-lh);
+}
+.h-md {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--headline-md-size);
+  line-height: var(--headline-md-lh);
+  text-wrap: balance;
+}
+.num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--number-display-size);
+  line-height: var(--number-display-lh);
+}
+.body-lg { font-size: var(--body-lg-size); line-height: var(--body-lg-lh); }
+.body-md { font-size: var(--body-md-size); line-height: var(--body-md-lh); }
+.label {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--label-size);
+  line-height: 1.333;
+  letter-spacing: var(--label-ls);
+}
+.muted { color: var(--text-muted); }
+.soft { color: var(--text-soft); }
+
+/* The lavender "×" between headline words */
+.xmark {
+  display: block;
+  flex: none;
+  width: 9.2rem;
+  height: 6.21rem;
+}
+
+/* Headline lockups: words stacked or in a row, with the × as a separator */
+.lockup {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+.lockup--center { align-items: center; text-align: center; }
+.lockup--row { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 0 0.4rem; }
+.lockup .display { white-space: nowrap; }
+
+/* Boxes the wrap animation draws around. No static border: the border is
+   drawn by js/modules/wrap.js (or shown statically under reduced motion). */
+.stop { position: relative; }
+
+/* Small mono tag on cards ("THE PROBLEM", "ROUND 01") */
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-card-medium);
+  color: var(--text-heading);
+}
+.tag--light { background: var(--text-heading); color: var(--text-ink); }
+
+/* Pills */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.8rem 2.8rem;
+  border: 0;
+  border-radius: 9999px;
+  background: var(--accent);
+  color: var(--accent-blue);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.pill:hover { background: #cdd5ff; transform: translateY(-1px); }
+.pill:active { transform: translateY(0); }
+.pill svg { width: 1.8rem; height: 1.8rem; min-width: 14px; min-height: 14px; }
+
+/* Text links with an arrow */
+.arrow-link {
+  font-size: var(--body-md-size);
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.arrow-link:hover, .arrow-link:focus-visible { color: var(--accent); }
+
+/* ── Media (images with a placeholder until the file exists) ─────────── */
+.media {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-card-dim);
+  max-width: 100%;
+}
+.sec--light .media { background: #e6e7ea; }
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.media.is-missing img { visibility: hidden; }
+.media.is-missing::after {
+  content: attr(data-file);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: max(1.1rem, 10px);
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 1.1rem, rgba(184, 195, 255, 0.07) 1.1rem 1.2rem);
+  word-break: break-all;
+}
+.sec--light .media.is-missing::after {
+  color: #6b7280;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 1.1rem, rgba(7, 49, 156, 0.07) 1.1rem 1.2rem);
+}
+
+/* ── Path + wrap overlay ─────────────────────────────────────────────── */
+.trace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: visible;
+}
+.trace line { stroke-linecap: butt; }
+
+/* Home start square (Figma Rectangle 1, 20×20) */
+.start-square {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: var(--accent);
+  transform-origin: right center; /* keeps the line's start point fixed while it pops in */
+}
+
+/* ── Reveal helpers (set by js/modules/reveal.js) ────────────────────── */
+.js .rv { will-change: transform, opacity; }
+/* hidden until the border starts wrapping round them (trace.js fades them in) */
+.js [data-wrap-reveal] > * { opacity: 0; }
+.js .start-square { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .js [data-wrap-reveal] > *, .js .start-square { opacity: 1; }
+}
+
+/* ── Footer-less pages end with breathing room ───────────────────────── */
+
+/* ── Reduced motion: static borders, no movement ─────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .pill, .arrow-link { transition: none; }
+}
+
+/* ── Mobile (below 768px) ────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+  html { font-size: 10px; }
+  :root {
+    --headline-display-size: 3.2rem;  /* headline-lg-mobile */
+    --headline-display-lh: 4rem;
+    --headline-display-ls: 0;
+    --headline-lg-size: 3.2rem;
+    --headline-lg-lh: 4rem;
+    --headline-md-size: 2.4rem;
+    --headline-md-lh: 3.2rem;
+  }
+  .nav { top: 2.4rem; left: 1.6rem; right: 1.6rem; }
+  .nav__logo { font-size: 1.6rem; }
+  .nav__links { gap: 2rem; }
+  .nav__links a { font-size: 1.3rem; }
+  .xmark { width: 4.6rem; height: 3.1rem; }
+  .lockup { gap: 1.2rem; }
+  .lockup .display { white-space: normal; }
+  .trace .path-layer { display: none; }
+  .start-square { display: none; }
+}

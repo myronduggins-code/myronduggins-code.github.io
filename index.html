@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Myron Duggins — UI/UX Design</title>
+  <meta name="description" content="Myron Duggins, UI/UX designer based in Birmingham. Case studies, CV and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/pages/home.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav" aria-label="Main">
+    <a class="nav__logo" href="index.html">Myron Duggins</a>
+    <div class="nav__links">
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">CONTACT ME</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────────────── -->
+    <section class="sec sec--dark hero" id="sec-hero" aria-labelledby="hero-title">
+      <div class="hero__stage">
+
+        <div class="hero__intro">
+          <h1 class="lockup lockup--center hero__title" id="hero-title">
+            <span class="display" data-intro>AI</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="" data-intro>
+            <span class="display" data-intro>DESIGN</span>
+          </h1>
+          <p class="body-lg hero__tagline" data-intro>UI/UX designer, AI for imagery, editing and brand identity portfolio.</p>
+        </div>
+
+        <span class="start-square" id="start-square" aria-hidden="true"></span>
+
+        <h2 class="h-lg hero__projects-title" data-intro>PROJECTS</h2>
+
+        <a class="proj stop hero__museum-mobile" id="card-museum-mobile" href="birmingham-museum-mobile.html">
+          <figure class="media" style="aspect-ratio: 190 / 412" data-file="assets/img/home-01-museum-mobile.png">
+            <img src="assets/img/home-01-museum-mobile.png" alt="Birmingham Museum mobile app home screen" loading="eager">
+          </figure>
+          <div class="proj__body">
+            <p class="proj__kicker">WEBSITE + CASE STUDY</p>
+            <h3 class="h-md proj__name">Birmingham Museum</h3>
+            <p class="proj__platform">Mobile App</p>
+          </div>
+        </a>
+
+        <a class="proj stop hero__museum-desktop" id="card-museum-desktop" href="birmingham-museum-desktop.html">
+          <figure class="media" style="aspect-ratio: 330 / 341.92" data-file="assets/img/home-02-museum-desktop.png">
+            <img src="assets/img/home-02-museum-desktop.png" alt="Birmingham Museum desktop website home page" loading="eager">
+          </figure>
+          <div class="proj__body">
+            <p class="proj__kicker">WEBSITE + CASE STUDY</p>
+            <h3 class="h-md proj__name">Birmingham Museum</h3>
+            <p class="proj__platform">Desktop App</p>
+          </div>
+        </a>
+
+        <a class="proj stop hero__helping-hand" id="card-helping-hand" href="helping-hand.html">
+          <figure class="media" style="aspect-ratio: 234 / 247" data-file="assets/img/home-03-helping-hand.png">
+            <img src="assets/img/home-03-helping-hand.png" alt="Helping Hand website hero, Feeding Families in the UK" loading="lazy">
+          </figure>
+          <div class="proj__body">
+            <p class="proj__kicker">WEBSITE + CASE STUDY</p>
+            <h3 class="h-md proj__name">Helping Hand</h3>
+            <p class="proj__platform">Desktop &amp; Mobile App</p>
+          </div>
+        </a>
+
+        <div class="photo-card stop hero__photo" id="card-photo" data-wrap-reveal>
+          <figure class="media photo-card__img" data-file="assets/img/home-04-portrait.png">
+            <img src="assets/img/home-04-portrait.png" alt="Portrait of Myron Duggins" loading="lazy">
+          </figure>
+          <p class="h-md photo-card__text">I’m Myron, and I <br>design one thoughtful <br>detail at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CV ───────────────────────────────────────────────────────── -->
+    <section class="sec sec--dark cv" id="cv" aria-labelledby="cv-title">
+      <div class="cv__head">
+        <h2 class="lockup lockup--center box stop cv__title" id="box-cv">
+          <span class="display">CURRICULUM</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">VITAE</span>
+          <span class="visually-hidden" id="cv-title">Curriculum Vitae</span>
+        </h2>
+        <p class="body-lg cv__intro">A detailed overview of my professional journey, academic background, and the core competencies I bring to digital product design and editorial strategy.</p>
+      </div>
+
+      <div class="cv__lists">
+        <div class="cv__group">
+          <h3 class="h-lg cv__heading">EXPERIENCE</h3>
+        </div>
+        <div class="cv__group cv__group--edu">
+          <h3 class="h-lg cv__heading">EDUCATION</h3>
+          <div class="cv__row" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="cv__cta">
+        <a class="pill label stop" id="btn-cv" href="assets/Myron-Duggins-CV.pdf" download>
+          Download CV
+          <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 11.25V2.25M12.75 7.5L9 11.25L5.25 7.5M15.75 11.25V14.25C15.75 14.6478 15.592 15.0294 15.3107 15.3107C15.0294 15.592 14.6478 15.75 14.25 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V11.25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── Contact ──────────────────────────────────────────────────── -->
+    <section class="sec sec--dark contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__info">
+        <h2 class="lockup lockup--center box stop contact__title" id="box-contact">
+          <span class="display">GET</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">IN TOUCH</span>
+          <span class="visually-hidden" id="contact-title">Get in touch</span>
+        </h2>
+        <p class="body-lg contact__intro">Reach out to discuss how we can elevate your digital presence.</p>
+        <ul class="contact__details">
+          <li>
+            <img src="assets/icons/mail.svg" alt="" width="20" height="16">
+            <a class="body-lg" href="mailto:myronduggins@googlemail.com">myronduggins@googlemail.com</a>
+          </li>
+          <li>
+            <img src="assets/icons/map-pin.svg" alt="" width="16" height="20">
+            <span class="body-lg">Based in Birmingham, England</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form stop" id="form-contact" novalidate>
+        <div class="form__fields">
+          <div class="field">
+            <label class="label" for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label class="label" for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label class="label" for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+        </div>
+        <!-- spam trap: hidden from people, ticked by bots (Web3Forms honeypot) -->
+        <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="pill label" type="submit">Send Message</button>
+        <p class="form__status body-md" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>

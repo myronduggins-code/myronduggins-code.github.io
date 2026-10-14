@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Helping Hand — Case Study · Myron Duggins</title>
+  <meta name="description" content="Helping Hand: designing a dignified path to emergency food support. A UI/UX case study by Myron Duggins.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/pages/helping-hand.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav" aria-label="Main">
+    <a class="nav__logo" href="index.html">Myron Duggins</a>
+    <div class="nav__links">
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">CONTACT ME</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Project overview (dark) ─────────────────────────────────── -->
+    <section class="sec sec--dark cs-overview" id="hh-sec-overview" aria-labelledby="hh-title">
+      <div class="stage" style="height: 88.1rem">
+        <div class="title-block" style="left: 8.85rem; top: 0">
+          <h1 class="lockup lockup--center" id="hh-title">
+            <span class="display" data-intro>WORK</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="" data-intro>
+            <span class="display" data-intro>CASE STUDY</span>
+          </h1>
+          <p class="body-lg" data-intro>Scroll to see the work and the thought behind it.</p>
+        </div>
+        <span class="start-square" id="hh-start-square" aria-hidden="true" style="left: 81.75rem; top: 17.7rem"></span>
+        <figure class="media media--tall stop" id="hh-prev-mobile" style="left: 93.75rem; top: 0.37rem; width: 19rem; aspect-ratio: 190 / 366.69" data-file="assets/img/hh-01-mobile-preview.png">
+          <img src="assets/img/hh-01-mobile-preview.png" alt="Helping Hand mobile home screen, Feeding Families in the UK">
+        </figure>
+        <figure class="media stop" id="hh-prev-desktop" style="left: 63.6rem; top: 45.6rem; width: 57.6rem; aspect-ratio: 576 / 425" data-file="assets/img/hh-02-desktop-preview.png">
+          <img src="assets/img/hh-02-desktop-preview.png" alt="Helping Hand desktop home page">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Case study hero (dark) ──────────────────────────────────── -->
+    <section class="sec sec--dark cs-hero" id="hh-sec-hero" aria-label="Project summary">
+      <div class="cs-hero__row">
+        <div class="lockup pad-48 stop" id="hh-lockup" style="width: 48.2rem; flex: none">
+          <span class="display">FOOD</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">ACCESS</span>
+        </div>
+        <div class="cs-hero__right stop" id="hh-intro" style="padding: 3.3rem 5.3rem">
+          <h2 class="h-md">Designing a dignified path to emergency food support</h2>
+          <div class="cs-hero__body">
+            <p class="body-lg">UI/UX research, AI-augmented synthesis, mobile ordering and dignity-first identity</p>
+            <p class="body-lg">An app that helps families and individuals experiencing food shortages request aid, schedule delivery, and track their orders — without the process feeling like a bureaucratic hurdle.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="meta__col" style="width: 29.2rem">
+          <h3 style="width: 23rem">EXPERTISE</h3>
+          <ul>
+            <li>• UX Research &amp; User Interviews</li>
+            <li>• Information Architecture</li>
+            <li>• Interaction Design</li>
+            <li>• Low- &amp; High-fidelity Prototyping</li>
+            <li>• UX Writing</li>
+          </ul>
+        </div>
+        <div class="meta__col" style="width: 34.2rem">
+          <h3 style="width: 31.6rem">PROJECT DETAILS</h3>
+          <dl>
+            <div><dt>ROLE:</dt><dd>Lead UX Designer (Research, IA, Prototyping)</dd></div>
+            <div><dt>TIMEFRAME:</dt><dd>26 weeks (Discovery to Delivery)</dd></div>
+            <div><dt>CLIENT:</dt><dd>Coursework</dd></div>
+          </dl>
+        </div>
+        <div class="meta__col" style="width: 37.3rem">
+          <h3 style="width: 25.3rem">TOOLS &amp; METHODS</h3>
+          <ul>
+            <li>• Figma (Wireframing &amp; Prototyping)</li>
+            <li>• AI-assisted Research Synthesis</li>
+            <li>• Usability Testing (2 Rounds)</li>
+            <li>• Low-fidelity Journey Mapping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The challenge (dark) ────────────────────────────────────── -->
+    <section class="sec sec--dark cs-challenge" id="hh-sec-challenge" aria-labelledby="hh-challenge-title">
+      <div class="challenge-box pad-48 stop" id="hh-challenge">
+        <h2 class="headline-row" id="hh-challenge-title">
+          <span class="display">THE</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">CHALLENGE</span>
+        </h2>
+        <p class="h-md">How might we design an app that gets people the food they need, quickly and without stress?</p>
+        <p class="body-lg">The product needed to do two things well: make it genuinely easy for someone to request food aid for themselves and their family, and make sure that food could reliably reach their home. Every design decision was measured against one question, could someone complete this task quickly and efficiently, even in a difficult moment?</p>
+      </div>
+
+      <div class="pair">
+        <div class="brief brief--light stop" id="hh-problem">
+          <span class="tag label">THE PROBLEM</span>
+          <p class="body-md">Existing websites were convoluted, text-dense, and difficult to navigate on mobile. Users struggling with food insecurity experienced shame, confusion regarding eligibility, and no visibility into whether their aid request had actually arrived.</p>
+        </div>
+        <div class="brief brief--light stop" id="hh-goal" style="padding-bottom: 5.975rem">
+          <span class="tag label">THE GOAL</span>
+          <p class="body-md">Make the core workflow intuitive at a glance. Enable users to request urgent food aid in under 3 minutes, and schedule discreet home delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Research (light) ────────────────────────────────────────── -->
+    <section class="sec sec--light cs-sec cs-research" id="hh-sec-research" aria-labelledby="hh-research-title">
+      <div class="cs-research__inner">
+        <div class="research-title">
+          <h2 class="lockup" id="hh-research-title">
+            <span class="display">RESEARCH</span>
+            <span class="lockup--row" style="display: flex; align-items: center">
+              <img class="xmark" src="assets/icons/x.svg" alt="">
+              <span class="display">DISCOVERY</span>
+            </span>
+          </h2>
+          <p class="body-lg">Research combined secondary user demographic data with AI-assisted synthesis to identify the primary friction points people face during emergency assistance.</p>
+        </div>
+
+        <div class="block">
+          <h3 class="block__head label">PAIN POINTS UNCOVERED IN PRIMARY DISCOVERY</h3>
+          <div class="cards" style="width: 100.8rem; align-self: center">
+            <article class="point pad-24 stop" id="hh-pain-1" style="width: 47rem; padding: 3.4rem">
+              <span class="num">01</span>
+              <h4>THE WEBSITE WASN’T USER-FRIENDLY</h4>
+              <p class="body-md">Focus on a streamlined, single-purpose flow throughout instead of buried forms and deep academic menus.</p>
+            </article>
+            <article class="point pad-24 stop" id="hh-pain-2" style="width: 47rem; padding: 3.4rem">
+              <span class="num">02</span>
+              <h4>FOOD NEEDS TO REACH HOMES</h4>
+              <p class="body-md">Build a dedicated system for ordering food and recording an address and discreet delivery drop-off time.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="block block--end" style="padding-top: 1.6rem">
+          <h3 class="block__head label">SYNTHESISED USER PERSONAS</h3>
+          <div class="cards" style="align-items: flex-start; align-self: center">
+            <article class="persona stop" id="hh-persona-1" style="width: 43rem; padding: 3.8rem; align-items: center">
+              <figure class="media" style="width: 27.8rem; aspect-ratio: 278 / 371; margin-bottom: 2.4rem" data-file="assets/img/hh-03-persona-amara.png">
+                <img src="assets/img/hh-03-persona-amara.png" alt="Persona photo for Amara Johnson" loading="lazy">
+              </figure>
+              <div style="align-self: stretch; display: flex; flex-direction: column">
+                <span class="label">PERSONA 01</span>
+                <h4 class="h-md" style="padding-top: 0.4rem">Amara Johnson</h4>
+                <p class="persona__quote">“I don’t have a car, and public transport with 3 bags of groceries is impossible with two young kids.”</p>
+                <p class="body-md">A 36-year-old single mother of five who works part-time. Her income from benefits and work doesn't cover her bills, and she needs emergency food support. She doesn't drive, so food has to be delivered to her home.</p>
+              </div>
+            </article>
+            <article class="persona stop" id="hh-persona-2" style="width: 43rem; padding: 3.8rem; align-items: center">
+              <figure class="media" style="width: 27.5rem; aspect-ratio: 275 / 367; margin-bottom: 2.4rem" data-file="assets/img/hh-04-persona-david.png">
+                <img src="assets/img/hh-04-persona-david.png" alt="Persona photo for David Mitchell" loading="lazy">
+              </figure>
+              <div style="align-self: stretch; display: flex; flex-direction: column">
+                <span class="label">PERSONA 02</span>
+                <h4 class="h-md" style="padding-top: 0.4rem">David Mitchell</h4>
+                <p class="persona__quote">“Warehouse night shifts mean standard pantry pick-up windows are always closed when I'm awake.”</p>
+                <p class="body-md">A 50-year-old full-time warehouse worker and father of two, struggling to pay bills. He needs an app that provides emergency food support and lets him choose arrival dates around his shifts.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="block" style="padding-top: 1.6rem; width: auto">
+          <h3 class="block__head label">USER JOURNEY MAPPING (WIREFRAME ARTEFACTS)</h3>
+          <div class="journeys">
+            <div class="journey" style="width: 55rem">
+              <figure class="media stop" id="hh-journey-1" style="width: 55rem; aspect-ratio: 550 / 277" data-file="assets/img/hh-05-journey-amara.png">
+                <img src="assets/img/hh-05-journey-amara.png" alt="User journey map for Amara" loading="lazy">
+              </figure>
+              <p class="body-md">Mapping Amara's journey highlighted emotional vulnerability, clarifying where friction and intake questions should be omitted.</p>
+            </div>
+            <div class="journey" style="width: 55rem">
+              <figure class="media stop" id="hh-journey-2" style="width: 55rem; aspect-ratio: 550 / 275" data-file="assets/img/hh-06-journey-david.png">
+                <img src="assets/img/hh-06-journey-david.png" alt="User journey map for David" loading="lazy">
+              </figure>
+              <p class="body-md">David's journey established the critical necessity for flexible scheduling and delivery notifications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design iteration 01 (dark) ──────────────────────────────── -->
+    <section class="sec sec--dark cs-sec cs-iteration" id="hh-sec-iteration" aria-labelledby="hh-iter-title">
+      <div class="iter-box pad-48 stop" id="hh-wire-box">
+        <h2 class="stack-x" id="hh-iter-title">
+          <span class="stack">
+            <span class="display">WIREFRAMES</span>
+            <span class="display">PROTOTYPES</span>
+          </span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+        </h2>
+        <p class="h-md">From wireframes to a testable low-fidelity prototype</p>
+        <p class="body-md">The aim throughout was to keep every screen clean and minimal, so the core task (requesting food aid) never got lost in secondary interface clutter.</p>
+      </div>
+
+      <div class="previews">
+        <div class="preview" style="width: 37.33rem">
+          <figure class="media stop" id="hh-wf-1" style="width: 37.33rem; aspect-ratio: 373.33 / 276" data-file="assets/img/hh-07-wireframe-homepage.png">
+            <img src="assets/img/hh-07-wireframe-homepage.png" alt="Desktop homepage wireframe" loading="lazy">
+          </figure>
+          <p class="body-md">Homepage wireframe: Clear logo, nav bar, hero illustration, slogan, CTA and legal links kept minimal.</p>
+        </div>
+        <div class="preview" style="width: 24rem; align-items: center">
+          <figure class="media media--tall stop" id="hh-wf-2" style="width: 20rem; aspect-ratio: 190 / 407" data-file="assets/img/hh-08-wireframe-mobile.png">
+            <img src="assets/img/hh-08-wireframe-mobile.png" alt="Mobile homepage wireframe" loading="lazy">
+          </figure>
+          <p class="body-md">Mobile Homepage wireframes: This was the first mobile homepage layout.</p>
+        </div>
+        <div class="preview" style="width: 37.33rem">
+          <figure class="media stop" id="hh-wf-3" style="width: 37.33rem; aspect-ratio: 373.34 / 264" data-file="assets/img/hh-09-wireframe-request-form.png">
+            <img src="assets/img/hh-09-wireframe-request-form.png" alt="Food request form wireframe" loading="lazy">
+          </figure>
+          <p class="body-md">Food request form: Designed to be as easy to navigate as possible, with a clear step indicator and prominent CTAs.</p>
+        </div>
+      </div>
+
+      <div class="lofi" style="gap: 4.8rem; padding-left: 9.6rem; justify-content: flex-start">
+        <figure class="media stop" id="hh-lofi-img" style="width: 44.2rem; aspect-ratio: 442 / 304" data-file="assets/img/hh-10-lofi-prototype.png">
+          <img src="assets/img/hh-10-lofi-prototype.png" alt="Low-fidelity prototype user flow in Figma" loading="lazy">
+        </figure>
+        <div class="lofi__text pad-48 stop" id="hh-lofi-card" style="width: 63rem">
+          <h3 class="h-md">Low-fidelity prototype</h3>
+          <p class="body-md" style="padding-bottom: 1.15rem">This user flow shows how a user would order a food parcel to be delivered to their house. Along with the connected About Us, Contact Us, Volunteer, FAQs and Donations pages.</p>
+          <a class="arrow-link" href="https://www.figma.com/proto/kQfXNTFKFnplxuycLgiHwP/Project-3-Wireframe?node-id=1-2&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;show-proto-sidebar=1" target="_blank" rel="noopener">View the low-fidelity prototype in Figma →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+        </div>
+      </div>
+
+      <div class="findings findings--grey stop" id="hh-findings">
+        <div class="findings__head">
+          <span class="tag label">ROUND 01</span>
+          <h3 class="h-md">USABILITY STUDY FINDINGS — WIREFRAME TO MOCK-UP</h3>
+        </div>
+        <ol class="body-md">
+          <li><span>01</span><span>Incorporate reassuring soft colour cues into the site to make it feel welcoming rather than clinical.</span></li>
+          <li><span>02</span><span>Change the font and increase tracking/spacing of body copy so it is easier to read for users in a stressful state.</span></li>
+          <li><span>03</span><span>Change primary CTA button size and standardise its positioning across the pages.</span></li>
+          <li><span>04</span><span>Group all contact details on the Contact Us page together.</span></li>
+          <li><span>05</span><span>Review the sizing and spacing of all forms of buttons to prevent mobile mis-clicks.</span></li>
+          <li><span>06</span><span>Move the homepage CTA directly below the illustration to make it immediately visible without scrolling.</span></li>
+          <li><span>07</span><span>Replace single-line "Address line 2" field with clearer fields: door number, street name, etc.</span></li>
+          <li><span>08</span><span>Revise button copy so it clearly communicates what each tap does.</span></li>
+          <li><span>09</span><span>Create a dedicated footer to house community partner and crisis helpline resources.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Design refinement (light) ───────────────────────────────── -->
+    <section class="sec sec--light cs-sec cs-refine" id="hh-sec-refine" aria-labelledby="hh-refine-title">
+      <div class="cs-refine__inner">
+        <div class="refine-title" style="padding-top: 0.7rem">
+          <h2 class="lockup-rows" id="hh-refine-title">
+            <span class="lockup--row" style="display: flex; align-items: center; gap: 0.4rem">
+              <span class="display">REFINING</span>
+              <img class="xmark" src="assets/icons/x.svg" alt="">
+              <span class="display">THE</span>
+            </span>
+            <span class="display">SYSTEM</span>
+          </h2>
+          <p class="h-md">Mock-ups, a high-fidelity prototype, and a second round of testing</p>
+          <p class="body-lg">A second usability round on the high-fidelity design surfaced deeper considerations, from payment and donation flexibility to visual consistency across design.</p>
+        </div>
+
+        <div class="compare">
+          <div class="mock stop" id="hh-cmp-1" style="width: min-content; padding: 4.2rem 3.8rem">
+            <figure class="media media--tall" style="width: 17.1rem; aspect-ratio: 171 / 407" data-file="assets/img/hh-11-before-backgrounds.png">
+              <img src="assets/img/hh-11-before-backgrounds.png" alt="Before: a donation screen without a background" loading="lazy">
+            </figure>
+            <p class="body-md">Before: Certain screens didn’t have backgrounds.</p>
+          </div>
+          <div class="mock stop" id="hh-cmp-2" style="width: min-content; padding: 4.2rem 3.8rem; min-height: 54.9rem; justify-content: center">
+            <figure class="media media--tall" style="width: 16.1rem; aspect-ratio: 161 / 407" data-file="assets/img/hh-12-after-backgrounds.png">
+              <img src="assets/img/hh-12-after-backgrounds.png" alt="After: the same screen with the consistent background" loading="lazy">
+            </figure>
+            <p class="body-md">After: Consistent background applied across screens.</p>
+          </div>
+          <div class="mock stop" id="hh-cmp-3" style="width: min-content; padding: 4.2rem 3.8rem">
+            <figure class="media media--tall" style="width: 20.2rem; aspect-ratio: 202 / 407" data-file="assets/img/hh-13-after-card-details.png">
+              <img src="assets/img/hh-13-after-card-details.png" alt="After: card detail entry added to the donation flow" loading="lazy">
+            </figure>
+            <p class="body-md">After: Card detail entry added to donation flow.</p>
+          </div>
+        </div>
+
+        <div class="round stop" id="hh-round">
+          <div class="round__head">
+            <span class="tag tag--light label">ROUND 02</span>
+            <h3 class="h-md">USABILITY STUDY FINDINGS — HIGH-FIDELITY DESIGN</h3>
+          </div>
+          <div class="round__groups body-md">
+            <div class="round__group">
+              <h4 class="label">CTA &amp; CONVERSION</h4>
+              <ul>
+                <li>Restyle the CTA (button shape, shadow, higher contrast) so it clearly reads as interactive on older displays.</li>
+                <li>Revise CTA copy to something more neutral and dignified — such as "Order Food" — to reduce social stigma.</li>
+                <li>Reduce the visual weight of homepage stats relative to the primary CTA, so the primary action stays dominant.</li>
+              </ul>
+            </div>
+            <div class="round__group">
+              <h4 class="label">PAYMENT &amp; DONATION FLOW</h4>
+              <ul>
+                <li>Add a custom amount field so charity donors aren't limited to fixed preset amounts.</li>
+                <li>Add a card-details section and a one-off payment option to support rapid anonymous micro-donations.</li>
+              </ul>
+            </div>
+            <div class="round__group">
+              <h4 class="label">VISUAL &amp; CONTENT CONSISTENCY</h4>
+              <ul>
+                <li>Standardise background treatment between the main food request flow and detail-entry screens.</li>
+                <li>Replace heavy bitmap images with vector assets to ensure better image quality.</li>
+                <li>Increase the size/contrast of section titles on the Donations page.</li>
+              </ul>
+            </div>
+            <div class="round__group">
+              <h4 class="label">NAVIGATION &amp; SUPPORT</h4>
+              <ul>
+                <li>Add a persistent Home link to the main navigation so users can return from anywhere on the site.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hifi">
+          <div class="hifi__card hifi__card--glass stop" id="hh-hifi-card">
+            <h3 class="h-md">High-fidelity prototype</h3>
+            <p class="body-lg" style="padding-top: 0.51rem">FULL FLOW PROTOTYPED IN FIGMA</p>
+            <p class="body-md">The full mobile and desktop flows were built in Figma, covering the homepage, food parcel flow, donations, volunteering, and contact page.</p>
+            <a class="arrow-link" href="https://www.figma.com/proto/kQfXNTFKFnplxuycLgiHwP/Project-3-Wireframe?node-id=420-2686&amp;page-id=411%3A411&amp;starting-point-node-id=420%3A2686&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;show-proto-sidebar=1" target="_blank" rel="noopener">View the high-fidelity prototype →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+          </div>
+          <figure class="media stop" id="hh-hifi-img" style="width: 30rem; aspect-ratio: 300 / 351" data-file="assets/img/hh-14-hifi-prototype.png">
+            <img src="assets/img/hh-14-hifi-prototype.png" alt="High-fidelity prototype flow in Figma" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Retrospective (dark) ────────────────────────────────────── -->
+    <section class="sec sec--dark cs-retro" id="hh-sec-retro" aria-labelledby="hh-retro-title">
+      <h2 class="retro-title pad-48 stop" id="hh-takeaways">
+        <span class="row"><img class="xmark" src="assets/icons/x.svg" alt=""><span class="display" id="hh-retro-title">TAKEAWAYS</span></span>
+        <span class="display">NEXT STEPS</span>
+      </h2>
+      <div class="retro-body">
+        <blockquote class="h-md">“The booking form was very straightforward to use, and navigating around was easy.”</blockquote>
+        <p class="body-md">Running two full rounds of usability testing demonstrated how much a design can be improved once real participants interact with it. Several critical friction points were resolved only after observing users navigating under time pressure.</p>
+        <div class="roadmap roadmap--plain">
+          <p class="body-md"><span>01</span><span>Make the prototype fully interactive, with a live AI chat feature represented in it.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

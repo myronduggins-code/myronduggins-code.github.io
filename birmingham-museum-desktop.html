@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Birmingham Museum Website — Case Study · Myron Duggins</title>
+  <meta name="description" content="Responsive Website: a desktop version of the Birmingham Museum &amp; Art Gallery app. A UI/UX case study by Myron Duggins.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/pages/birmingham-museum-desktop.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav nav--ink" aria-label="Main">
+    <a class="nav__logo" href="index.html">Myron Duggins</a>
+    <div class="nav__links">
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">CONTACT ME</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Project overview (light) ────────────────────────────────── -->
+    <section class="sec sec--light cs-overview cs-overview--centred" id="bmd-sec-overview" aria-labelledby="bmd-title">
+      <div class="stage">
+        <div class="title-block">
+          <h1 class="lockup lockup--center" id="bmd-title">
+            <span class="display" data-intro>WORK</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="" data-intro>
+            <span class="display" data-intro>CASE STUDY</span>
+          </h1>
+          <p class="body-lg" data-intro>Scroll to see the work and the thought behind it.</p>
+        </div>
+        <figure class="media stop" id="bmd-prev-home" style="width: 46.5rem; aspect-ratio: 650 / 673.47" data-file="assets/img/bmd-01-home-screen.png">
+          <img src="assets/img/bmd-01-home-screen.png" alt="Birmingham Museum website home page on desktop">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Case study hero (light) ─────────────────────────────────── -->
+    <section class="sec sec--light cs-hero" id="bmd-sec-hero" aria-label="Project summary" style="padding-inline: 6.6rem">
+      <div class="cs-hero__row" style="align-items: flex-start; gap: 1.8rem">
+        <div style="width: 62.9rem; flex: none; padding-top: 2.4rem; display: flex; flex-direction: column; gap: 3.2rem">
+          <div class="lockup" style="padding-block: 1.6rem">
+            <span class="display">RESPONSIVE</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="">
+            <span class="display">WEBSITE</span>
+          </div>
+          <p class="body-md" style="width: 49.5rem; max-width: 100%">This project involved creating a desktop version of the mobile app for the Birmingham Museum &amp; Art Gallery.</p>
+        </div>
+        <div class="cs-hero__right" style="padding-block: 2.8rem; gap: 3.5rem; align-items: center">
+          <h2 class="h-md" style="width: 67.2rem; max-width: 100%; text-align: center">Designing a desktop version of the mobile app everyone can understand.</h2>
+          <div style="border: 1px solid var(--text-light-gray); width: 48.7rem; max-width: 100%">
+            <figure class="media stop" id="bmd-detail" style="width: 46.5rem; max-width: 100%; aspect-ratio: 465 / 482" data-file="assets/img/bmd-02-detail-entry.png">
+              <img src="assets/img/bmd-02-detail-entry.png" alt="Detail entry screen of the desktop website" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta meta--tight">
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>EXPERTISE</h3>
+          <ul>
+            <li>• Interaction Design</li>
+            <li>• Low- &amp; High-fidelity Prototyping</li>
+            <li>• UX Writing</li>
+          </ul>
+        </div>
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>PROJECT DETAILS</h3>
+          <dl>
+            <div><dt>ROLE:</dt><dd>Lead UX Designer (Research, IA, Prototyping)</dd></div>
+            <div><dt>TIMEFRAME:</dt><dd>8 weeks (Discovery to Delivery)</dd></div>
+            <div><dt>CLIENT:</dt><dd>Coursework</dd></div>
+          </dl>
+        </div>
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>TOOLS &amp; METHODS</h3>
+          <ul>
+            <li>• Figma (Wireframing &amp; Prototyping)</li>
+            <li>• Low-fidelity Journey Mapping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The challenge (light) ───────────────────────────────────── -->
+    <section class="sec sec--light cs-challenge" id="bmd-sec-challenge" aria-labelledby="bmd-challenge-title">
+      <div class="challenge-box" style="padding-top: 0.55rem">
+        <h2 class="headline-row" id="bmd-challenge-title">
+          <span class="display">THE</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">CHALLENGE</span>
+        </h2>
+        <p class="h-md">How might we create a desktop version that feels consistent with the mobile app?</p>
+      </div>
+
+      <div class="pair">
+        <div class="brief brief--dark brief--plain">
+          <span class="tag tag--light label">THE PROBLEM</span>
+          <p class="body-md">There isn’t a desktop version of the app, so releasing it would mean users could only access it on their mobile phones.</p>
+        </div>
+        <div class="brief brief--dark brief--plain">
+          <span class="tag tag--light label">THE GOAL</span>
+          <p class="body-md">Create a streamlined desktop website that is simple to use and provides a similar user experience to the mobile app.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design iteration 01 (light) ─────────────────────────────── -->
+    <section class="sec sec--light cs-sec cs-iteration" id="bmd-sec-iteration" aria-labelledby="bmd-iter-title">
+      <div class="iter-box" style="padding: 0.55rem 0 0 8.6rem">
+        <h2 class="stack-x" id="bmd-iter-title">
+          <span class="stack">
+            <span class="display">WIREFRAMES</span>
+            <span class="display">PROTOTYPES</span>
+          </span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+        </h2>
+        <p class="h-md">From digital wireframes to a testable low-fidelity prototype</p>
+        <p class="body-md">The aim throughout was to keep every screen plain and easy to understand, so users could explore the website rather than learn how to use it.</p>
+      </div>
+
+      <div class="previews">
+        <div class="preview" style="width: 37.33rem">
+          <div style="border: 1px solid var(--text-light-gray)">
+            <figure class="media stop" id="bmd-wf-1" style="width: 100%; aspect-ratio: 371.33 / 264.06" data-file="assets/img/bmd-03-wireframe-event-details.png">
+              <img src="assets/img/bmd-03-wireframe-event-details.png" alt="Wireframe of the event and exhibition details screen" loading="lazy">
+            </figure>
+          </div>
+          <p class="body-md">This event/exhibition details screen shows an image representing the event or exhibition, along with a description of the event or exhibition and a CTA for purchasing a ticket.</p>
+        </div>
+        <div class="preview" style="width: 37.33rem">
+          <div style="border: 1px solid var(--text-light-gray)">
+            <figure class="media stop" id="bmd-wf-2" style="width: 100%; aspect-ratio: 371.33 / 424.45" data-file="assets/img/bmd-04-wireframe-browse.png">
+              <img src="assets/img/bmd-04-wireframe-browse.png" alt="Wireframe of the browse exhibitions and events screen" loading="lazy">
+            </figure>
+          </div>
+          <p class="body-md">This wireframe shows the screen where users can browse the exhibitions and events that the museum offers.</p>
+        </div>
+        <div class="preview" style="width: 37.33rem">
+          <div style="border: 1px solid var(--text-light-gray)">
+            <figure class="media stop" id="bmd-wf-3" style="width: 100%; aspect-ratio: 371 / 263.82" data-file="assets/img/bmd-05-wireframe-confirmation.png">
+              <img src="assets/img/bmd-05-wireframe-confirmation.png" alt="Wireframe of the booking confirmation screen" loading="lazy">
+            </figure>
+          </div>
+          <p class="body-md">This confirmation screen appears after users book tickets for an event or exhibition. It summarises the details they need, including the event or exhibition times and date or other relevant booking information.</p>
+        </div>
+      </div>
+
+      <div class="lofi" style="gap: 19.6rem; padding-left: 12rem; justify-content: center">
+        <figure class="media stop dashed" id="bmd-lofi-img" style="width: 40rem; aspect-ratio: 432 / 295" data-file="assets/img/bmd-06-lofi-userflow.png">
+          <img src="assets/img/bmd-06-lofi-userflow.png" alt="Low-fidelity prototype user flow in Figma" loading="lazy">
+        </figure>
+        <div class="lofi__text">
+          <h3 class="h-md">Low-fidelity prototype</h3>
+          <p class="body-md" style="padding-bottom: 1.15rem; max-width: 46rem">This user flow shows how a visitor would purchase tickets for events and exhibitions using the app.</p>
+          <a class="arrow-link" href="https://www.figma.com/proto/QQYBO6lVUvv1KZfiM9FILd/Desktop-website?node-id=61-2282&amp;page-id=61%3A2006&amp;starting-point-node-id=61%3A2282&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;hide-ui=1" target="_blank" rel="noopener">View the low-fidelity prototype in Figma →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design refinement (dark) ────────────────────────────────── -->
+    <section class="sec sec--dark cs-sec cs-refine" id="bmd-sec-refine" aria-labelledby="bmd-refine-title">
+      <div class="cs-refine__inner">
+        <div class="refine-title" style="padding-top: 1.4rem">
+          <h2 class="lockup-rows" id="bmd-refine-title">
+            <span style="display: flex; align-items: center; gap: 0.4rem">
+              <span class="display">REFINING</span>
+              <img class="xmark" src="assets/icons/x.svg" alt="">
+              <span class="display">THE</span>
+            </span>
+            <span class="display">SYSTEM</span>
+          </h2>
+          <p class="h-md" style="color: var(--border-separator)">Mock-ups and a high-fidelity prototype.</p>
+        </div>
+
+        <div class="compare compare--tight">
+          <div class="mock stop" id="bmd-cmp-1" style="width: 37.87rem; padding: 2.1rem 2.1rem 3.7rem; align-items: flex-start">
+            <figure class="media" style="width: 100%; aspect-ratio: 344.66 / 245.09" data-file="assets/img/bmd-07-home-mockup.png">
+              <img src="assets/img/bmd-07-home-mockup.png" alt="Home screen mock-up" loading="lazy">
+            </figure>
+            <p class="body-md">This is the mock-up for the home screen, initially the screen was quite empty so the leaves were added to fill space and make the screen look more visually interesting.</p>
+          </div>
+          <div class="mock stop" id="bmd-cmp-2" style="width: 37.87rem; padding: 2.1rem 2.1rem 3.7rem; align-items: flex-start">
+            <figure class="media" style="width: 100%; aspect-ratio: 344.66 / 357.11" data-file="assets/img/bmd-08-mandarin-home.png">
+              <img src="assets/img/bmd-08-mandarin-home.png" alt="Home screen in Mandarin" loading="lazy">
+            </figure>
+            <p class="body-md">This is the final home screen for the Mandarin version of the website, shown when the user switches languages.</p>
+          </div>
+          <div class="mock stop" id="bmd-cmp-3" style="width: 37.87rem; padding: 2.1rem; align-items: flex-start">
+            <figure class="media" style="width: 100%; aspect-ratio: 344.67 / 245.1" data-file="assets/img/bmd-09-about-mockup.png">
+              <img src="assets/img/bmd-09-about-mockup.png" alt="About Us screen mock-up" loading="lazy">
+            </figure>
+            <p class="body-md">This is the mock-up for the about us screen. This screen turned out well, as I didn’t need to add any additional elements that weren’t found in the mobile version of this screen.</p>
+          </div>
+        </div>
+
+        <div class="hifi" style="justify-content: flex-start; align-items: flex-start; gap: 9.9rem; padding-left: 8.4rem">
+          <div class="hifi__card hifi__card--plain">
+            <h3 class="h-md">High-fidelity prototype</h3>
+            <p class="body-lg" style="padding-top: 0.51rem">FULL FLOW PROTOTYPED IN FIGMA</p>
+            <p class="body-md">The full desktop flow was built out in Figma, covering the homepage, exhibitions, events, ticket purchase, and contact pages.</p>
+            <a class="arrow-link" href="https://www.figma.com/proto/QQYBO6lVUvv1KZfiM9FILd/Desktop-website?node-id=67-2798&amp;page-id=67%3A2797&amp;starting-point-node-id=67%3A2798&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;hide-ui=1" target="_blank" rel="noopener">View the high-fidelity prototype →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+          </div>
+          <figure class="media stop" id="bmd-hifi-img" style="width: 39.9rem; aspect-ratio: 550 / 463" data-file="assets/img/bmd-10-hifi-userflow.png">
+            <img src="assets/img/bmd-10-hifi-userflow.png" alt="High-fidelity prototype user flow in Figma" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Retrospective (light) ───────────────────────────────────── -->
+    <section class="sec sec--light cs-retro" id="bmd-sec-retro" aria-labelledby="bmd-retro-title">
+      <h2 class="retro-title">
+        <span class="row"><img class="xmark" src="assets/icons/x.svg" alt=""><span class="display" id="bmd-retro-title">TAKEAWAYS</span></span>
+        <span class="display">NEXT STEPS</span>
+      </h2>
+      <div class="retro-body">
+        <blockquote class="h-md">“Trying to make a desktop version wasn’t as easy as I thought it would be.”</blockquote>
+        <p class="body-md">I believe that if I were to start this project again, I would make the desktop version first rather than the mobile version. Starting with the mobile app meant working out how to fill all the extra space on desktop, which I found difficult. If I had started with the desktop app, I would have just removed elements when needed and reduced the size of the components for mobile, which I believe would have been easier for me personally.</p>
+        <div class="roadmap">
+          <h3 class="label">NEXT ITERATION ROADMAP</h3>
+          <p class="body-md"><span>01</span><span>Build the desktop screens in the other supported languages and test the multilingual feature end to end, to confirm the website still works as intended in every supported language.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

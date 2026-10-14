@@ -1,0 +1,182 @@
+/* Home — Figma frame "Wireframe Home Screen" (259:1016), 1440px wide.
+   Measurements are Figma px / 10 in rem. */
+
+/* ── Hero ───────────────────────────────────────────────────────────── */
+.hero { padding: 13.2rem 16.4rem 29.2rem 14.2rem; }
+.hero__stage {
+  position: relative;
+  width: 113.4rem;
+  height: 155.3rem;
+}
+.hero__stage > * { position: absolute; }
+
+.hero__intro {
+  left: 0; top: 4.6rem; width: 40.3rem;
+  display: flex; flex-direction: column; align-items: center; gap: 2.4rem;
+}
+.hero__title { gap: 1.6rem; }
+.hero__tagline { width: 39.9rem; max-width: 100%; text-align: center; }
+
+.start-square { left: 38.1rem; top: 17.9rem; }
+
+.hero__projects-title { left: 80.2rem; top: 3.27rem; }
+.hero__museum-mobile { left: 80.5rem; top: 14.97rem; width: 26.2rem; }
+.hero__museum-desktop { left: 33.6rem; top: 46.75rem; width: 30rem; }
+.hero__helping-hand { left: 80.2rem; top: 101.7rem; width: 30.3rem; }
+.hero__photo { left: 0.2rem; top: 108.3rem; width: 63.1rem; height: 34.1rem; }
+
+/* Project cards (Figma: Card Dark Alt fill, 5px lavender stroke drawn by the wrap) */
+.proj {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 3.8rem;
+  background: var(--surface-card-dark-alt);
+  color: var(--text-heading);
+  text-decoration: none;
+}
+.proj .media { width: 100%; }
+.proj__body { display: flex; flex-direction: column; gap: 1.6rem; }
+.proj__kicker, .proj__platform {
+  font-size: var(--body-lg-size);
+  line-height: var(--body-lg-lh);
+  color: var(--text-body);
+}
+.proj__name { color: var(--text-heading); }
+.proj__name { transition: color 0.2s ease; }
+.proj:hover .proj__name, .proj:focus-visible .proj__name { color: var(--accent); }
+.proj:focus-visible { outline-offset: 6px; }
+
+/* Photo card */
+.photo-card {
+  display: flex;
+  align-items: center;
+  padding: 2.1rem;
+}
+.photo-card__img {
+  flex: none;
+  width: 26.9rem;
+  height: 30.9rem;
+  margin-right: -1.6rem;
+  background: transparent;
+}
+.photo-card__img img { object-position: bottom; }
+.photo-card__text { color: #fff; white-space: nowrap; text-wrap: nowrap; }
+
+/* ── CV ─────────────────────────────────────────────────────────────── */
+.cv {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  padding: 13.2rem 14rem 14rem;
+}
+.cv__head { display: flex; flex-direction: column; gap: 2.4rem; align-items: flex-start; }
+.box { padding: 5.3rem; }
+.cv__title { width: 76.6rem; max-width: 100%; }
+.cv__intro { width: 50.4rem; max-width: 100%; text-align: center; }
+.cv__lists { display: flex; flex-direction: column; gap: 9.6rem; }
+.cv__group { display: flex; flex-direction: column; gap: 4rem; }
+.cv__group--edu { width: 96.1rem; max-width: 100%; }
+.cv__heading {
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(--border-hairline);
+  opacity: 0.9;
+}
+.cv__row { height: 11.2rem; }
+.cv__cta { display: flex; justify-content: center; }
+
+/* ── Contact ────────────────────────────────────────────────────────── */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  padding: 17.5rem 14rem 14rem 13.5rem;
+}
+.contact__info { flex: 0 0 auto; min-width: 0; }
+.form { flex: 1 1 0; min-width: 0; }
+.contact__info { display: flex; flex-direction: column; gap: 2.4rem; align-items: flex-start; }
+/* same 48px + 5px border inset as CURRICULUM × VITAE */
+.contact__title { width: auto; max-width: none; padding: 5.3rem; }
+.contact__intro { width: 44rem; max-width: 100%; text-align: center; }
+.contact__details {
+  align-self: stretch;
+  display: flex; flex-direction: column; gap: 1.55rem; align-items: flex-end;
+}
+.contact__details li {
+  width: 48.5rem; max-width: 100%;
+  display: flex; align-items: center; gap: 1.6rem;
+}
+.contact__details img { width: 2rem; height: auto; min-width: 16px; }
+.contact__details li:nth-child(2) img { width: 1.6rem; min-width: 13px; margin-inline: 0.2rem; }
+.contact__details a { text-decoration: none; }
+.contact__details a { transition: color 0.2s ease; }
+.contact__details a:hover, .contact__details a:focus-visible { color: var(--accent); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: flex-start;
+  padding: 5.3rem;
+  background: var(--surface-black);
+}
+.form__fields { width: 100%; display: flex; flex-direction: column; gap: 1.6rem; }
+.field { display: flex; flex-direction: column; gap: 0.8rem; }
+.field .label { color: var(--text-body); }
+.field input, .field textarea {
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  background: var(--surface-card-dim);
+  border: 1px solid var(--border-input);
+  border-radius: 1.2rem;
+  color: var(--text-body);
+  font-size: var(--body-md-size);
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.field textarea { height: 16rem; min-height: 120px; resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: var(--text-body); opacity: 0.35; }
+.field input:focus-visible, .field textarea:focus-visible { border-color: var(--accent); }
+.field [aria-invalid="true"] { border-color: #ffb4ab; }
+.form__status { min-height: 1.5em; color: var(--text-body); }
+.form__status[data-tone="ok"] { color: var(--accent); }
+.form__status[data-tone="error"] { color: #ffb4ab; }
+.form .pill:disabled { opacity: 0.7; cursor: progress; transform: none; }
+
+/* ── Mobile ─────────────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+  .hero { padding: 9.6rem 1.6rem 6.4rem; }
+  .hero__stage {
+    width: auto; height: auto;
+    display: flex; flex-direction: column; gap: 4.8rem; align-items: stretch;
+  }
+  .hero__stage > * { position: static; }
+  .hero__intro { width: auto; }
+  .hero__projects-title { align-self: center; }
+  .hero__museum-mobile, .hero__museum-desktop, .hero__helping-hand {
+    width: min(100%, 32rem); align-self: center;
+  }
+  .hero__museum-mobile .media { width: 70%; align-self: center; }
+  .hero__photo {
+    width: 100%; height: auto;
+    flex-direction: column; gap: 2.4rem; padding: 2.4rem;
+  }
+  .photo-card__img { margin-right: 0; width: 22rem; height: 25.3rem; }
+  .photo-card__text { white-space: normal; text-align: center; }
+  .photo-card__text br { display: none; }
+
+  .cv { padding: 6.4rem 1.6rem; gap: 4.8rem; }
+  .box { padding: 3.2rem 2.4rem; }
+  .cv__title { width: 100%; }
+  .cv__intro { width: 100%; }
+  .cv__lists { gap: 4.8rem; }
+
+  .contact { flex-direction: column; align-items: stretch; gap: 4.8rem; padding: 6.4rem 1.6rem; }
+  .contact__title { width: 100%; padding: 3.2rem 2.4rem; }
+  .contact__intro { width: 100%; }
+  .contact__details { align-items: flex-start; }
+  .contact__details li { width: 100%; }
+  .contact__details a { word-break: break-all; }
+  .form { padding: 2.4rem; }
+}

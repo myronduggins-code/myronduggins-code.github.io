@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Birmingham Museum Mobile App — Case Study · Myron Duggins</title>
+  <meta name="description" content="Universal Access: designing a museum mobile app everyone can navigate, in their own language. A UI/UX case study by Myron Duggins.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/pages/birmingham-museum-mobile.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav nav--ink" aria-label="Main">
+    <a class="nav__logo" href="index.html">Myron Duggins</a>
+    <div class="nav__links">
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">CONTACT ME</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Project overview (light) ────────────────────────────────── -->
+    <section class="sec sec--light cs-overview" id="bmm-sec-overview" aria-labelledby="bmm-title" style="padding-bottom: 14rem">
+      <div class="stage" style="height: 37.4rem">
+        <div class="title-block" style="left: 8.85rem; top: 0">
+          <h1 class="lockup lockup--center" id="bmm-title">
+            <span class="display" data-intro>WORK</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="" data-intro>
+            <span class="display" data-intro>CASE STUDY</span>
+          </h1>
+          <p class="body-lg" data-intro>Scroll to see the work and the thought behind it.</p>
+        </div>
+        <figure class="media media--tall stop" id="bmm-prev-mobile" style="left: 95.2rem; top: 0.4rem; width: 16.8rem; aspect-ratio: 158 / 356" data-file="assets/img/bmm-01-mobile-preview.png">
+          <img src="assets/img/bmm-01-mobile-preview.png" alt="Birmingham Museum &amp; Art Gallery app home screen">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Case study hero (light) ─────────────────────────────────── -->
+    <section class="sec sec--light cs-hero" id="bmm-sec-hero" aria-label="Project summary">
+      <div class="cs-hero__row">
+        <div class="stop" id="bmm-lockup" style="width: 60.9rem; flex: none; padding: 2.9rem">
+          <div class="lockup" style="padding-block: 1.6rem">
+            <span class="display">UNIVERSAL</span>
+            <img class="xmark" src="assets/icons/x.svg" alt="">
+            <span class="display">ACCESS</span>
+          </div>
+        </div>
+        <div class="cs-hero__right" style="padding-block: 2.8rem; gap: 3.5rem">
+          <h2 class="h-md" style="width: 67.2rem; max-width: 100%">Designing a museum mobile app everyone can navigate, in their own language</h2>
+          <div class="cs-hero__body" style="width: 62.3rem; max-width: 100%">
+            <p class="body-md">I designed a mobile app for Birmingham Museum &amp; Art Gallery that helps visitors explore exhibitions, events, book tickets, and stay informed even if the visitors aren’t confident with technology or English isn’t their first language.</p>
+            <p class="body-md">In this project I set out to design an app that works well for busy parents looking for a family-friendly afternoon out and also for new arrivals to the city. It is built to be simple to use, translatable, and easy to keep up with.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta meta--tight">
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>EXPERTISE</h3>
+          <ul>
+            <li>• UX Research &amp; User Interviews</li>
+            <li>• Information Architecture</li>
+            <li>• Interaction Design</li>
+            <li>• Low- &amp; High-fidelity Prototyping</li>
+            <li>• UX Writing</li>
+          </ul>
+        </div>
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>PROJECT DETAILS</h3>
+          <dl>
+            <div><dt>ROLE:</dt><dd>Lead UX Designer (Research, IA, Prototyping)</dd></div>
+            <div><dt>TIMEFRAME:</dt><dd>8 weeks (Discovery to Delivery)</dd></div>
+            <div><dt>CLIENT:</dt><dd>Coursework</dd></div>
+          </dl>
+        </div>
+        <div class="meta__col" style="width: 37.33rem">
+          <h3>TOOLS &amp; METHODS</h3>
+          <ul>
+            <li>• Figma (Wireframing &amp; Prototyping)</li>
+            <li>• AI-assisted Research Synthesis</li>
+            <li>• Usability Testing (2 Rounds)</li>
+            <li>• Low-fidelity Journey Mapping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The challenge (light) ───────────────────────────────────── -->
+    <section class="sec sec--light cs-challenge" id="bmm-sec-challenge" aria-labelledby="bmm-challenge-title">
+      <div class="challenge-box pad-48 stop" id="bmm-challenge" style="margin-top: 0.55rem">
+        <h2 class="headline-row" id="bmm-challenge-title">
+          <span class="display">THE</span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+          <span class="display">CHALLENGE</span>
+        </h2>
+        <p class="h-md">How might we make a museum mobile app approachable for visitors who find websites, language, or technology a barrier?</p>
+        <p class="body-lg" style="max-width: 82rem">The app needed to address two sources of stress: not knowing how to use a mobile app very well and not being able to fully read it. Every decision followed one goal, could someone find and book something they wanted to see without friction getting in the way?</p>
+      </div>
+
+      <div class="pair">
+        <div class="brief brief--dark stop" id="bmm-problem" style="padding: 4.5rem 4.2rem 4.2rem">
+          <span class="tag tag--light label">THE PROBLEM</span>
+          <p class="body-md">The existing museum app wasn't user-friendly, had no translation feature for non-English speakers or readers, and gave visitors no way to get email reminders for upcoming or booked events.</p>
+        </div>
+        <div class="brief brief--dark stop" id="bmm-goal" style="padding: 4.5rem 4.2rem 4.2rem">
+          <span class="tag tag--light label">THE GOAL</span>
+          <p class="body-md">Make the mobile app streamlined and simple to use, add a translation option so it's usable in more than one language, and let visitors opt in to email reminders for the events they are interested in.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Research (dark) ─────────────────────────────────────────── -->
+    <section class="sec sec--dark cs-sec cs-research" id="bmm-sec-research" aria-labelledby="bmm-research-title">
+      <div class="cs-research__inner">
+        <div class="research-title">
+          <h2 class="lockup" id="bmm-research-title">
+            <span class="display">RESEARCH</span>
+            <span style="display: flex; align-items: center">
+              <img class="xmark" src="assets/icons/x.svg" alt="">
+              <span class="display">DISCOVERY</span>
+            </span>
+          </h2>
+          <p class="body-lg muted">Research combined secondary user demographic data with AI-assisted synthesis to identify the primary friction points people face using the current mobile app.</p>
+        </div>
+
+        <div class="block">
+          <h3 class="block__head label">PAIN POINTS UNCOVERED IN PRIMARY RESEARCH</h3>
+          <div class="cards" style="width: 100.8rem; align-self: center">
+            <article class="point stop" id="bmm-pain-1" style="width: 32rem; padding: 2.9rem">
+              <span class="num">01</span>
+              <h4>THE MOBILE APP WASN’T USER-FRIENDLY</h4>
+              <p class="body-md">Focus on making the design as streamlined and simple as possible.</p>
+            </article>
+            <article class="point stop" id="bmm-pain-2" style="width: 30.7rem; padding: 2.9rem">
+              <span class="num">02</span>
+              <h4>NO TRANSLATION</h4>
+              <p class="body-md">Incorporate a translation feature so people from different countries can understand and use the app.</p>
+            </article>
+            <article class="point stop" id="bmm-pain-3" style="width: 30.7rem; padding: 2.9rem">
+              <span class="num">03</span>
+              <h4>NO EMAIL REMINDERS</h4>
+              <p class="body-md">Add email reminders for upcoming events, and for events people have already booked.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="block block--end" style="padding-top: 1.6rem">
+          <h3 class="block__head label">SYNTHESISED USER PERSONAS</h3>
+          <div class="cards" style="align-items: flex-start; align-self: stretch">
+            <article class="persona stop" id="bmm-persona-1" style="width: 53.6rem; padding: 3.8rem">
+              <figure class="media" style="width: 100%; aspect-ratio: 468 / 263.25; margin-bottom: 2.4rem" data-file="assets/img/bmm-02-persona-sarah.png">
+                <img src="assets/img/bmm-02-persona-sarah.png" alt="Persona card for Sarah" loading="lazy">
+              </figure>
+              <span class="label">PERSONA 01</span>
+              <h4 class="h-md" style="padding-top: 0.4rem">Sarah</h4>
+            </article>
+            <article class="persona stop" id="bmm-persona-2" style="width: 53.6rem; padding: 3.8rem">
+              <figure class="media" style="width: 100%; aspect-ratio: 468 / 263.25; margin-bottom: 2.4rem" data-file="assets/img/bmm-03-persona-adam.png">
+                <img src="assets/img/bmm-03-persona-adam.png" alt="Persona card for Adam" loading="lazy">
+              </figure>
+              <span class="label">PERSONA 02</span>
+              <h4 class="h-md" style="padding-top: 0.4rem">Adam</h4>
+            </article>
+          </div>
+        </div>
+
+        <div class="block" style="padding-top: 1.6rem; width: 128rem">
+          <h3 class="block__head body-md">USER JOURNEY MAPPING</h3>
+          <div class="journeys">
+            <div class="journey" style="width: 62.4rem">
+              <div class="journey__frame">
+                <figure class="media stop" id="bmm-journey-1" style="width: 44.1rem; aspect-ratio: 441 / 221" data-file="assets/img/bmm-04-journey-sarah.png">
+                  <img src="assets/img/bmm-04-journey-sarah.png" alt="User journey map for Sarah" loading="lazy">
+                </figure>
+              </div>
+              <p class="body-md">Sarah’s journey highlighted confusion around finding events and booking tickets. Clearer visibility and a more streamlined process could reduce that confusion.</p>
+            </div>
+            <div class="journey" style="width: 62.4rem">
+              <div class="journey__frame">
+                <figure class="media stop" id="bmm-journey-2" style="width: 45rem; aspect-ratio: 450 / 225" data-file="assets/img/bmm-05-journey-adam.png">
+                  <img src="assets/img/bmm-05-journey-adam.png" alt="User journey map for Adam" loading="lazy">
+                </figure>
+              </div>
+              <p class="body-md">Adam’s journey revealed frustration with a hard-to-find language option and a cluttered events search, both of which need simplifying.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design iteration 01 (light) ─────────────────────────────── -->
+    <section class="sec sec--light cs-sec cs-iteration" id="bmm-sec-iteration" aria-labelledby="bmm-iter-title">
+      <div class="iter-box stop" id="bmm-wire-box" style="padding: 5.3rem 5.3rem 5.3rem 9.1rem">
+        <h2 class="stack-x" id="bmm-iter-title">
+          <span class="stack">
+            <span class="display">WIREFRAMES</span>
+            <span class="display">PROTOTYPES</span>
+          </span>
+          <img class="xmark" src="assets/icons/x.svg" alt="">
+        </h2>
+        <p class="h-md">From paper wireframes to a testable low-fidelity prototype</p>
+        <p class="body-md">The aim throughout was to keep every screen plain and easy to understand, so exploring the app, not learning the app, stayed the main task.</p>
+      </div>
+
+      <div class="previews">
+        <div class="preview" style="width: 37.33rem">
+          <figure class="media stop" id="bmm-wf-1" style="width: 37.33rem; aspect-ratio: 371.33 / 278.69" data-file="assets/img/bmm-06-paper-wireframes.png">
+            <img src="assets/img/bmm-06-paper-wireframes.png" alt="Paper wireframes for the homepage" loading="lazy">
+          </figure>
+          <p class="body-md">Paper wireframes: First homepage direction, after five rounds of rapid layout ideation.</p>
+        </div>
+        <div class="preview" style="width: 37.33rem; align-items: center">
+          <figure class="media media--tall stop" id="bmm-wf-2" style="width: 21.2rem; aspect-ratio: 202 / 616" data-file="assets/img/bmm-07-wireframe-exhibitions.png">
+            <img src="assets/img/bmm-07-wireframe-exhibitions.png" alt="Digital wireframe of the exhibitions screen" loading="lazy">
+          </figure>
+          <p class="body-md">Exhibition screen lists events with a short detail line (time, date, price).</p>
+        </div>
+        <div class="preview" style="width: 37.33rem; align-items: center">
+          <figure class="media media--tall stop" id="bmm-wf-3" style="width: 21.1rem; aspect-ratio: 201 / 397" data-file="assets/img/bmm-08-wireframe-homepage.png">
+            <img src="assets/img/bmm-08-wireframe-homepage.png" alt="Digital wireframe of the homepage" loading="lazy">
+          </figure>
+          <p class="body-md">Homepage — the menu icon keeps the nav bar free of clutter, with a museum image and the museum’s name below.</p>
+        </div>
+      </div>
+
+      <div class="lofi" style="gap: 13.2rem; padding-inline: 8.2rem; justify-content: flex-end">
+        <figure class="media stop" id="bmm-lofi-img" style="width: 44.4rem; aspect-ratio: 630 / 434.63" data-file="assets/img/bmm-09-lofi-prototype.png">
+          <img src="assets/img/bmm-09-lofi-prototype.png" alt="Low-fidelity prototype user flow in Figma" loading="lazy">
+        </figure>
+        <div class="lofi__text">
+          <h3 class="h-md">Low-fidelity prototype</h3>
+          <p class="body-md" style="padding-bottom: 1.15rem; max-width: 46rem">This user flow shows how a visitor would purchase tickets for events and exhibitions using the app — along with the connected About Us, Contact Us, and Volunteer pages.</p>
+          <a class="arrow-link" href="https://www.figma.com/proto/YZgFIcsV8Vt2WblLM8bcN3/wireframes?node-id=7-173&amp;page-id=0%3A1&amp;starting-point-node-id=7%3A173&amp;scaling=scale-down&amp;content-scaling=fixed&amp;hide-ui=1" target="_blank" rel="noopener">View the low-fidelity prototype in Figma →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+        </div>
+      </div>
+
+      <div class="findings findings--white stop" id="bmm-findings">
+        <div class="findings__head">
+          <span class="tag tag--black label">ROUND 01</span>
+          <h3 class="h-md">USABILITY STUDY FINDINGS — WIREFRAME TO MOCK-UP</h3>
+        </div>
+        <ol class="body-md">
+          <li><span>01</span><span>Need to make sure that all icons and links are visible for users.</span></li>
+          <li><span>02</span><span>Avoid complicating the app when developing its high-fidelity design.</span></li>
+          <li><span>03</span><span>Need to add all the relevant information to the app.</span></li>
+          <li><span>04</span><span>Need to use icons that apps similar to mine use and I need to make sure they are clearly visible.</span></li>
+          <li><span>05</span><span>Make sure all page animations are the same so everything is consistent.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Design refinement (dark) ────────────────────────────────── -->
+    <section class="sec sec--dark cs-sec cs-refine" id="bmm-sec-refine" aria-labelledby="bmm-refine-title">
+      <div class="cs-refine__inner">
+        <div class="refine-title refine-box pad-48 stop" id="bmm-refine-box">
+          <h2 class="lockup-rows" id="bmm-refine-title">
+            <span style="display: flex; align-items: center; gap: 0.4rem">
+              <span class="display">REFINING</span>
+              <img class="xmark" src="assets/icons/x.svg" alt="">
+              <span class="display">THE</span>
+            </span>
+            <span class="display">SYSTEM</span>
+          </h2>
+          <p class="h-md" style="color: var(--border-separator)">Mock-ups, a high-fidelity prototype, and a second round of testing</p>
+          <p class="body-lg soft">A second usability round on the high-fidelity design highlighted more issues from icon recognition to text contrast and consistency across screens.</p>
+        </div>
+
+        <div class="compare compare--tight">
+          <div class="mock stop" id="bmm-cmp-1" style="width: 31.8rem; padding: 2.1rem 2.1rem 3.7rem">
+            <figure class="media media--tall" style="width: 18.8rem; aspect-ratio: 188 / 408" data-file="assets/img/bmm-10-before-icons.png">
+              <img src="assets/img/bmm-10-before-icons.png" alt="Before: home screen with the original language and home icons" loading="lazy">
+            </figure>
+            <p class="body-md">Before: Testing found the language and home icons weren't recognised by a user.</p>
+          </div>
+          <div class="mock stop" id="bmm-cmp-2" style="width: 31.8rem; padding: 2.1rem">
+            <figure class="media media--tall" style="width: 18.8rem; aspect-ratio: 188 / 407" data-file="assets/img/bmm-11-after-icons.png">
+              <img src="assets/img/bmm-11-after-icons.png" alt="After: home screen with clearer icons" loading="lazy">
+            </figure>
+            <p class="body-md">After: Both icons were replaced with clearer, more familiar equivalents.</p>
+          </div>
+          <div class="mock stop" id="bmm-cmp-3" style="width: 31.8rem; padding: 2.1rem 2.1rem 3.7rem">
+            <figure class="media media--tall" style="width: 18.8rem; aspect-ratio: 188 / 499" data-file="assets/img/bmm-12-after-content.png">
+              <img src="assets/img/bmm-12-after-content.png" alt="After: exhibition screen with real content and a sharper paint stroke" loading="lazy">
+            </figure>
+            <p class="body-md">After: Placeholder text was replaced with real content for clearer text and the paint stroke was sharpened for better contrast.</p>
+          </div>
+        </div>
+
+        <div class="round round--line">
+          <div class="round__head">
+            <span class="tag tag--light label" style="background: #fff">ROUND 02</span>
+            <h3 class="round__title-sm">USABILITY STUDY FINDINGS — HIGH-FIDELITY DESIGN</h3>
+          </div>
+          <div class="round__groups body-md">
+            <div class="round__group">
+              <h4 class="label">VISUAL &amp; CONTENT CONSISTENCY</h4>
+              <ul>
+                <li>Make sure lettering and its background have high contrast, so text is easy to read.</li>
+                <li>Alter the paint stroke so it matches the visual theme of the app.</li>
+              </ul>
+            </div>
+            <div class="round__group">
+              <h4 class="label">BOOKINGS &amp; TICKETS</h4>
+              <ul>
+                <li>Add all the ticket types that are common for a museum app (e.g. concession, family, group).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hifi" style="justify-content: flex-end; padding-inline: 4.8rem; width: 123rem">
+          <div class="hifi__card hifi__card--plain">
+            <h3 class="h-md">High-fidelity prototype</h3>
+            <p class="body-lg" style="padding-top: 0.51rem">FULL FLOW PROTOTYPED IN FIGMA</p>
+            <p class="body-md">The full mobile flow was built out in Figma, covering the homepage, exhibitions, events, ticket purchase, and contact pages.</p>
+            <a class="arrow-link" href="https://www.figma.com/proto/YZgFIcsV8Vt2WblLM8bcN3/wireframes?node-id=172-2151&amp;page-id=172%3A1666&amp;starting-point-node-id=172%3A2151&amp;scaling=scale-down&amp;content-scaling=fixed&amp;hide-ui=1" target="_blank" rel="noopener">View the high-fidelity prototype →<span class="visually-hidden"> (opens Figma in a new tab)</span></a>
+          </div>
+          <figure class="media stop" id="bmm-hifi-img" style="width: 36.9rem; aspect-ratio: 367 / 331" data-file="assets/img/bmm-13-hifi-prototype.png">
+            <img src="assets/img/bmm-13-hifi-prototype.png" alt="High-fidelity prototype flow in Figma" loading="lazy">
+          </figure>
+        </div>
+
+        <h3 class="a11y-head body-md">ACCESSIBILITY CONSIDERATIONS</h3>
+        <div class="a11y">
+          <div class="a11y__card">
+            <span class="a11y__num">1</span>
+            <p class="body-md">Users can always get back to the home screen via the home icon in the nav bar and a dedicated home button on the confirmation page.</p>
+          </div>
+          <div class="a11y__card">
+            <span class="a11y__num">2</span>
+            <p class="body-md">A language selection option lets visitors use the app in their own language if they find English difficult.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Retrospective (light) ───────────────────────────────────── -->
+    <section class="sec sec--light cs-retro" id="bmm-sec-retro" aria-labelledby="bmm-retro-title">
+      <h2 class="retro-title">
+        <span class="row"><img class="xmark" src="assets/icons/x.svg" alt=""><span class="display" id="bmm-retro-title">TAKEAWAYS</span></span>
+        <span class="display">NEXT STEPS</span>
+      </h2>
+      <div class="retro-body">
+        <blockquote class="h-md">“The app was straight to the point and it wasn't confusing to use.”</blockquote>
+        <p class="body-md">Running two full rounds of usability testing showed how much a design changes once real participants use it, from icon recognition, text contrast, and animation consistency these only became apparent once people were actually navigating the flow themselves. Staying open to that kind of feedback, even late in the process, made the final design better.</p>
+        <div class="roadmap">
+          <h3 class="label">NEXT ITERATION ROADMAP</h3>
+          <p class="body-md"><span>01</span><span>Test the added multilingual feature end to end to confirm the app still works as intended across every supported language.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
