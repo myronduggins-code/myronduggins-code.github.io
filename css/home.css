@@ -76,13 +76,20 @@
 .cv__intro { width: 50.4rem; max-width: 100%; text-align: center; }
 .cv__lists { display: flex; flex-direction: column; gap: 9.6rem; }
 .cv__group { display: flex; flex-direction: column; gap: 4rem; }
-.cv__group--edu { width: 96.1rem; max-width: 100%; }
+.cv__group--wide { width: 96.1rem; max-width: 100%; }
 .cv__heading {
   padding-bottom: 2.4rem;
   border-bottom: 1px solid var(--border-hairline);
   opacity: 0.9;
 }
-.cv__row { height: 11.2rem; }
+.cv__skills { display: flex; flex-direction: column; gap: 1.2rem; color: var(--text-body); }
+.cv__skills li { display: flex; gap: 1.2rem; }
+.cv__skills li::before { content: "•"; color: var(--accent); }
+.cv__entry { display: flex; flex-direction: column; gap: 1.2rem; }
+.cv__dates { color: var(--text-muted); }
+.cv__role { color: var(--text-heading); }
+.cv__role-sub { color: var(--accent); font-weight: 500; }
+.cv__desc { color: var(--text-body); max-width: 76rem; text-wrap: pretty; }
 .cv__cta { display: flex; justify-content: center; }
 
 /* ── Contact ────────────────────────────────────────────────────────── */
