@@ -247,6 +247,11 @@
 .roadmap--plain { border-top: 0; padding-top: 0; }
 
 /* ── Mobile ────────────────────────────────────────────────────────── */
+/* Light sections: plain images get their border 5px off the picture
+   (drawn by the trace, 10px outside the image), so leave room around them. */
+.sec--light figure.media.stop { margin-block: 1rem; }
+.sec--light .journeys, .sec--light .previews { gap: 5.2rem; }
+
 @media (max-width: 767.98px) {
   .cs-sec, .cs-overview, .cs-hero, .cs-challenge, .cs-refine, .cs-retro { padding: 6.4rem 1.6rem; }
   .cs-overview { padding-top: 9.6rem; }
@@ -282,4 +287,9 @@
   .hifi { padding-inline: 0 !important; }
   .research-title p { width: 100%; }
   .journey__frame { width: 100%; height: auto; }
+  /* full-width light-section images: keep their offset border on screen */
+  .sec--light :is(.journey, .hifi, .preview, .lofi) > .media.stop:not(.media--tall) {
+    width: calc(100% - 2rem) !important; margin-inline: auto;
+  }
+  .sec--light .preview > div:has(> .media.stop) { margin-inline: 1rem; }
 }

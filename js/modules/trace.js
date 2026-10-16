@@ -123,7 +123,15 @@ export function initTrace(config) {
       const info = rectOf(node);
       if (!info) return;
       const isLight = !!info.node.closest('.sec--light');
-      const st = getStop(info.node, info.R, isLight ? lightColour : colour('--accent'));
+      // Plain images in light sections get a 5px clear gap so the border
+      // doesn't sit on the picture itself (cards keep their tight border).
+      // The 5px stroke is drawn inside the box, so the box grows by 5 + 5.
+      let R = info.R;
+      if (isLight && info.node.matches('figure.media')) {
+        const g = 10 * u;
+        R = rect(R.l - g, R.t - g, R.w + 2 * g, R.h + 2 * g);
+      }
+      const st = getStop(info.node, R, isLight ? lightColour : colour('--accent'));
       if (!st.wrap) {
         let s0 = info.R.t - 0.8 * vh;
         let len = Math.max(0.3 * vh, 180);
