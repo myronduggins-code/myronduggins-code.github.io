@@ -31,6 +31,7 @@ export function ready() {
       const { gsap, ScrollTrigger } = window;
       if (!gsap || !ScrollTrigger) {
         console.error('GSAP failed to load; the page stays static.');
+        document.documentElement.classList.remove('is-loading', 'js');
         return; // content is fully visible without JS animation
       }
       gsap.registerPlugin(ScrollTrigger);

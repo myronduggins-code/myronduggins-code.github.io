@@ -35,7 +35,9 @@ export function initReveal({ gsap, ScrollTrigger }) {
   const laterImages = images.filter((img) => !introImages.includes(img));
 
   // ── intro ──────────────────────────────────────────────────────────
-  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  // lazy: false applies each .from() starting state immediately rather than on
+  // GSAP's next tick, so the page can be un-hidden right after this runs.
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out', lazy: false } });
   tl.from('.nav', { opacity: 0, y: -8, duration: 0.6, ease: 'power2.out' }, 0);
   const introItems = [...document.querySelectorAll('[data-intro]')];
   if (introItems.length) {

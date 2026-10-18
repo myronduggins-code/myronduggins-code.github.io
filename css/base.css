@@ -277,6 +277,8 @@ button, input, textarea { font: inherit; color: inherit; }
 /* hidden until the border starts wrapping round them (trace.js fades them in) */
 .js [data-wrap-reveal] > * { opacity: 0; }
 .js .start-square { opacity: 0; }
+/* nothing paints until reveal.js has set the intro's starting state */
+.is-loading .page { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .js [data-wrap-reveal] > *, .js .start-square { opacity: 1; }
 }

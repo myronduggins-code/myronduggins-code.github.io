@@ -13,6 +13,8 @@ export function boot(pathConfig, { afterIntro } = {}) {
     const intro = initReveal(libs);
     const trace = initTrace(pathConfig);
     trace.startIntro(Math.max(0.5, intro.duration() - 0.7));
+    // Starting states are set, so it's safe to show the page now.
+    document.documentElement.classList.remove('is-loading');
     if (afterIntro) afterIntro(libs);
     return { libs, trace };
   });

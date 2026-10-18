@@ -3,6 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>
+    // Hide the page until the intro animation has set its starting state, so
+    // content never paints, vanishes and then animates in. Safety net: if
+    // GSAP is slow or blocked, show the page as-is after 3 seconds.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js', 'is-loading');
+      setTimeout(function () {
+        if (d.classList.contains('is-loading')) d.classList.remove('is-loading', 'js');
+      }, 3000);
+    })();
+  </script>
   <title>Birmingham Museum Mobile App — Case Study · Myron Duggins</title>
   <meta name="description" content="Universal Access: designing a museum mobile app everyone can navigate, in their own language. A UI/UX case study by Myron Duggins.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
