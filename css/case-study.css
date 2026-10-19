@@ -126,7 +126,7 @@
 
 .journeys { display: flex; gap: 3.2rem; justify-content: center; align-items: flex-start; }
 .journey { display: flex; flex-direction: column; gap: 1.2rem; align-items: center; }
-.journey__frame { height: 25.3rem; display: flex; align-items: center; justify-content: center; }
+.journey__frame { display: flex; align-items: center; justify-content: center; }
 .sec--dark .journey p { color: var(--text-muted); }
 
 /* ── Design iteration ──────────────────────────────────────────────── */
