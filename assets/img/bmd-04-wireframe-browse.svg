@@ -3,73 +3,73 @@
 <rect x="630" y="46" width="176" height="128" fill="#6D6D6D"/>
 <path d="M630.596 45.1971L630 46L804.066 174L804.662 173.197L805.258 172.394L631.192 44.3942L630.596 45.1971Z" fill="black"/>
 <path d="M804.889 46.806L630.592 174.806" stroke-width="2" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 301.438)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 301.438)" fill="#6D6D6D"/>
 <path d="M1384.48 311.438L1123.38 545.438M1123.04 313.149L1384.48 547.149M1385 312.292H1121V546.292H1385V312.292Z" stroke-width="2" stroke="black"/>
 <path d="M1382 581.649H1124" stroke="black"/>
 <path d="M1382 619.649H1124" stroke="black"/>
 <path d="M1382 657.649H1124" stroke="black"/>
 <path d="M1382 695.649H1124" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 723.438)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 723.438)" fill="#6D6D6D"/>
 <path d="M1384.48 733.438L1123.38 967.438M1123.04 735.149L1384.48 969.149M1385 734.292H1121V968.292H1385V734.292Z" stroke-width="2" stroke="black"/>
 <path d="M1382 1003.65H1124" stroke="black"/>
 <path d="M1382 1041.65H1124" stroke="black"/>
 <path d="M1382 1079.65H1124" stroke="black"/>
 <path d="M1382 1117.65H1124" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 1145.44)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1395 1145.44)" fill="#6D6D6D"/>
 <path d="M1384.48 1155.44L1123.38 1389.44M1123.04 1157.15L1384.48 1391.15M1385 1156.29H1121V1390.29H1385V1156.29Z" stroke-width="2" stroke="black"/>
 <path d="M1382 1425.65H1124" stroke="black"/>
 <path d="M1382 1463.65H1124" stroke="black"/>
 <path d="M1382 1501.65H1124" stroke="black"/>
 <path d="M1382 1539.65H1124" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 301.292)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 301.292)" fill="#6D6D6D"/>
 <path d="M1027.48 311.292L766.381 545.292M766.039 313.003L1027.48 547.003M1028 312.146H764V546.146H1028V312.146Z" stroke-width="2" stroke="black"/>
 <path d="M1025 581.503H767" stroke="black"/>
 <path d="M1025 619.503H767" stroke="black"/>
 <path d="M1025 657.503H767" stroke="black"/>
 <path d="M1025 695.503H767" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 723.292)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 723.292)" fill="#6D6D6D"/>
 <path d="M1027.48 733.292L766.381 967.292M766.039 735.003L1027.48 969.003M1028 734.146H764V968.146H1028V734.146Z" stroke-width="2" stroke="black"/>
 <path d="M1025 1003.5H767" stroke="black"/>
 <path d="M1025 1041.5H767" stroke="black"/>
 <path d="M1025 1079.5H767" stroke="black"/>
 <path d="M1025 1117.5H767" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 1145.29)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 1038 1145.29)" fill="#6D6D6D"/>
 <path d="M1027.48 1155.29L766.381 1389.29M766.039 1157L1027.48 1391M1028 1156.15H764V1390.15H1028V1156.15Z" stroke-width="2" stroke="black"/>
 <path d="M1025 1425.5H767" stroke="black"/>
 <path d="M1025 1463.5H767" stroke="black"/>
 <path d="M1025 1501.5H767" stroke="black"/>
 <path d="M1025 1539.5H767" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 301.146)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 301.146)" fill="#6D6D6D"/>
 <path d="M670.48 311.146L409.381 545.146M409.039 312.857L670.484 546.857M671 312H407V546H671V312Z" stroke-width="2" stroke="black"/>
 <path d="M668 581.357H410" stroke="black"/>
 <path d="M668 619.357H410" stroke="black"/>
 <path d="M668 657.357H410" stroke="black"/>
 <path d="M668 695.357H410" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 723.146)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 723.146)" fill="#6D6D6D"/>
 <path d="M670.48 733.146L409.381 967.146M409.039 734.857L670.484 968.857M671 734H407V968H671V734Z" stroke-width="2" stroke="black"/>
 <path d="M668 1003.36H410" stroke="black"/>
 <path d="M668 1041.36H410" stroke="black"/>
 <path d="M668 1079.36H410" stroke="black"/>
 <path d="M668 1117.36H410" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 1145.15)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 681 1145.15)" fill="#6D6D6D"/>
 <path d="M670.48 1155.15L409.381 1389.15M409.039 1156.86L670.484 1390.86M671 1156H407V1390H671V1156Z" stroke-width="2" stroke="black"/>
 <path d="M668 1425.36H410" stroke="black"/>
 <path d="M668 1463.36H410" stroke="black"/>
 <path d="M668 1501.36H410" stroke="black"/>
 <path d="M668 1539.36H410" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 301)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 301)" fill="#6D6D6D"/>
 <path d="M313.48 311L52.3808 545M52.0386 312.711L313.484 546.711M314 311.854H50V545.854H314V311.854Z" stroke-width="2" stroke="black"/>
 <path d="M311 581.211H53" stroke="black"/>
 <path d="M311 619.211H53" stroke="black"/>
 <path d="M311 657.211H53" stroke="black"/>
 <path d="M311 695.211H53" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 723)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 723)" fill="#6D6D6D"/>
 <path d="M313.48 733L52.3808 967M52.0386 734.711L313.484 968.711M314 733.854H50V967.854H314V733.854Z" stroke-width="2" stroke="black"/>
 <path d="M311 1003.21H53" stroke="black"/>
 <path d="M311 1041.21H53" stroke="black"/>
 <path d="M311 1079.21H53" stroke="black"/>
 <path d="M311 1117.21H53" stroke="black"/>
-<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 1145)" fill="white"/>
+<rect width="284" height="394.711" transform="matrix(-1 0 0 1 324 1145)" fill="#6D6D6D"/>
 <path d="M313.48 1155L52.3808 1389M52.0386 1156.71L313.484 1390.71M314 1155.85H50V1389.85H314V1155.85Z" stroke-width="2" stroke="black"/>
 <path d="M311 1425.21H53" stroke="black"/>
 <path d="M311 1463.21H53" stroke="black"/>
